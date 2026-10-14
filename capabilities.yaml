@@ -19,3 +19,9 @@ state:
 credentials (by name, from the runtime):
   - codex ChatGPT login     # ~/.codex/auth.json via `codex login`; never read or copied
 access: write its working folder; copying into a repo, or any paid API, needs approval
+requires:   # programs it runs: hq install and hq doctor check them (hq deps image --install)
+  codex: brew install codex                                  # pictures, on your ChatGPT login (then: codex login)
+  uv: brew install uv                                        # charts, finishing, background removal
+  node: brew install node                                    # diagrams and isometric explainers
+  mmdc: npm install -g @mermaid-js/mermaid-cli               # diagrams
+  /Applications/Google Chrome.app: brew install --cask google-chrome   # infographics and cards
